@@ -1,7 +1,15 @@
 {
+  "tz": "Europe/Berlin",
   "users": [
     "camunda"
   ],
+  "authorization": {
+    "sudo": {
+      "groups": ["sudo"],
+      "users": ["root"],
+      "passwordless": false
+    }
+  },
   "java": {
     "arch": "arm",
     "install_flavor": "oracle",
@@ -18,23 +26,21 @@
       "accept_oracle_download_terms": true
     }
   },
-  "tmux": {
-    "install_method": "source",
-    "version": "1.9a",
-    "checksum": "c5e3b22b901cf109b20dab54a4a651f0471abd1f79f6039d79b250d21c2733f5"
-  },
   "maven": {
     "setup_bin": true
   },
   "run_list": [
+    "recipe[minipcs::default]",
+    "recipe[timezone-ii::default]",
+    "recipe[ntp::default]",
     "recipe[user::data_bag]",
+    "recipe[sudo::default]",
     "recipe[vim::default]",
     "recipe[htop::default]",
     "recipe[tmux::default]",
     "recipe[git::default]",
     "recipe[ack::default]",
     "recipe[java::default]",
-    "recipe[maven::default]",
-    "recipe[minipcs::default]"
+    "recipe[maven::default]"
   ]
 }

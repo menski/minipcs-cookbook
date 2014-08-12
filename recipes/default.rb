@@ -64,3 +64,7 @@ cookbook_file 'aliases.sh' do
   path '/etc/profile.d/aliases.sh'
   action :create
 end
+
+service "ntp" do
+  provider Chef::Provider::Service::Init::Debian
+end

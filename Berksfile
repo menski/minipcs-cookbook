@@ -2,6 +2,9 @@ source 'https://supermarket.getchef.com'
 
 metadata
 
+cookbook 'sudo'
+cookbook 'timezone-ii'
+cookbook 'ntp'
 cookbook 'user'
 cookbook 'vim'
 cookbook 'htop'

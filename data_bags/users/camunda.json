@@ -1,6 +1,7 @@
 {
   "id": "camunda",
   "password": "$1$esIv1QB3$LjIWc6R/4dEYLrY5zsyEd.",
+  "groups": ["sudo"],
   "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWvEtG1cRcGOQklxrxLz5XwYTgMNuEJzGqW0zF4MRTRPVJtTuDZH7+oaYvUDwNXR5bxQBtPyLHKy8vq4H+W5Hw9vttIrSrKLBPtpWJNBUr44rRxNY2CJqnBG0yIpH0PTA5Rhi8InOwjziiAnNdXZ5dhsyh+yQmHglMsG6IAGqH1E1Jtdyrm4IUDuRI3sB3AV+8y4++xmpt1GOuvmz5M8nD3IEQgKFC/5c8hUCo7+qA5r2CODLD/+HXtWKwBk/mOX2uBowo5CgQa/NqemTJoCOLh8O3uRSUJcNgRSQUGdBALaOzZUwAjltFk8rVaswd6Fl866ZBQUz5CEjGAyA6J21R camunda developer",
   "action": "create"
 }
